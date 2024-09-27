@@ -1,0 +1,446 @@
+:root {
+    --border-color: #000000;
+    --shadow-color: #000000;
+    --background-color: #f0f0f0;
+    --white: #ffffff;
+    --transition-speed: 0.2s;
+    --border-radius: 12px;
+    --box-shadow: 6px 6px 0 var(--shadow-color);
+
+}
+
+
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.share-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.share-item {
+    background-color: var(--white);
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    box-shadow: var(--box-shadow);
+    color: var(--border-color);
+    position: relative;
+}
+
+.share-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0 var(--shadow-color);
+    filter: brightness(1.05);
+}
+
+.share-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 0 var(--shadow-color);
+}
+
+.share-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Share Item Color Categories */
+.share-item[data-name] {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Share Item Color Categories */
+.share-item[data-name="Facebook"] {
+    background-color: #1877F2;
+}
+
+.share-item[data-name="Twitter"] {
+    background-color: #1DA1F2;
+}
+
+.share-item[data-name="Instagram"] {
+    background-color: #E4405F;
+}
+
+.share-item[data-name="LinkedIn"] {
+    background-color: #0A66C2;
+}
+
+.share-item[data-name="Pinterest"] {
+    background-color: #BD081C;
+}
+
+.share-item[data-name="YouTube"] {
+    background-color: #FF0000;
+}
+
+.share-item[data-name="TikTok"] {
+    background-color: #b36969;
+}
+
+.share-item[data-name="Reddit"] {
+    background-color: #FF4500;
+}
+
+.share-item[data-name="Tumblr"] {
+    background-color: #36465D;
+}
+
+.share-item[data-name="Snapchat"] {
+    background-color: #FFFC00;
+}
+
+.share-item[data-name="WhatsApp"] {
+    background-color: #25D366;
+}
+
+.share-item[data-name="Text Message"] {
+    background-color: #7AC943;
+}
+
+.share-item[data-name="Email"] {
+    background-color: #D44638;
+}
+
+.share-item[data-name="Clouds"] {
+    background-color: #03A9F4;
+}
+
+.share-item[data-name="Space"] {
+    background-color: #3F51B5;
+}
+
+.share-item[data-name="Robotic Letter"] {
+    background-color: #795548;
+}
+
+.share-item[data-name="Pen Pal"] {
+    background-color: #FF9800;
+}
+
+.share-item[data-name="Carrier Pigeon"] {
+    background-color: #607D8B;
+}
+
+.share-item[data-name="Telemarketers"] {
+    background-color: #F44336;
+}
+
+.share-item[data-name="President"] {
+    background-color: #E91E63;
+}
+
+.share-item[data-name="Human Hair"] {
+    background-color: #9E9E9E;
+}
+
+.share-item[data-name="Explorers"] {
+    background-color: #FFC107;
+}
+
+.share-item[data-name="Prisoners"] {
+    background-color: #FF5722;
+}
+
+.share-item[data-name="Drones"] {
+    background-color: #00BCD4;
+}
+
+.share-item[data-name="Twitch Donation"] {
+    background-color: #9146FF;
+}
+
+.share-item[data-name="Breaking News"] {
+    background-color: #E53935;
+}
+
+.share-item[data-name="Local Newspapers"] {
+    background-color: #8BC34A;
+}
+
+.share-item[data-name="Neighbors"] {
+    background-color: #CDDC39;
+}
+
+.share-item[data-name="Santa"] {
+    background-color: #D32F2F;
+}
+
+.share-item[data-name="Future Self"] {
+    background-color: #7E57C2;
+}
+
+.share-item[data-name="Void"] {
+    background-color: #c05454;
+}
+
+.share-item[data-name="Dead Man's Switch"] {
+    background-color: #455A64;
+}
+
+.share-item[data-name="Celeb Shoutout"] {
+    background-color: #FF6F00;
+}
+
+.share-item[data-name="Maze"] {
+    background-color: #eff316;
+}
+
+.share-item[data-name="Message in a Bottle"] {
+    background-color: #1E88E5;
+}
+
+.share-item[data-name="Fortune Cookie"] {
+    background-color: #6D4C41;
+}
+
+.share-item[data-name="Rubiks Mosaic"] {
+    background-color: #8E24AA;
+}
+
+.share-item[data-name="Convert"] {
+    background-color: #4CAF50;
+}
+
+.share-item[data-name="Fake Text"] {
+    background-color: #009688;
+}
+
+.share-item[data-name="GIF"] {
+    background-color: #00C853;
+}
+
+.share-item[data-name="Emoji"] {
+    background-color: #FFEB3B;
+}
+
+.share-item[data-name="Link"] {
+    background-color: #2196F3;
+}
+
+.share-item[data-name="QR Code"] {
+    background-color: #8d5050;
+}
+
+.share-item[data-name="Self-Destruct Link"] {
+    background-color: #FF6B6B;
+}
+
+.share-item[data-name="Secret Note"] {
+    background-color: #FFD700;
+}
+
+.share-item[data-name="ChatGPT"] {
+    background-color: #00796B;
+}
+
+.share-item[data-name="Languages"] {
+    background-color: #9C27B0;
+}
+
+.share-item[data-name="3D-AR Display"] {
+    background-color: #64DD17;
+}
+
+.share-item[data-name="Projection"] {
+    background-color: #AA00FF;
+}
+
+.share-item[data-name="Backpack Billboards"] {
+    background-color: #FF6D00;
+}
+
+.share-item[data-name="Times Square"] {
+    background-color: #FFD600;
+}
+
+.share-item[data-name="Chalk Art"] {
+    background-color: #76FF03;
+}
+
+.share-item[data-name="Wall Drawing"] {
+    background-color: #F50057;
+}
+
+.share-item[data-name="Cling Alls"] {
+    background-color: #FF3D00;
+}
+
+.share-item[data-name="Street Washing"] {
+    background-color: #1DE9B6;
+}
+
+.share-item[data-name="Ice Embossing"] {
+    background-color: #00B8D4;
+}
+
+.share-item[data-name="Custom Cereal Box"] {
+    background-color: #FFAB00;
+}
+
+.share-item[data-name="Trading Cards"] {
+    background-color: #304FFE;
+}
+
+.share-item[data-name="GPS Doodle"] {
+    background-color: #C51162;
+}
+
+.share-item[data-name="Branded Fruit"] {
+    background-color: #00BFA5;
+}
+
+.share-item[data-name="Video in Print"] {
+    background-color: #D500F9;
+}
+
+.share-item[data-name="Vehicle Emoji"] {
+    background-color: #FFB300;
+}
+
+.custom-message-input,
+.popup {
+    border: 5px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.custom-message-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-message-input:focus,
+.popup {
+    outline: none;
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0 var(--shadow-color);
+}
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    padding: 30px;
+    max-width: 80%;
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.popup h2 {
+    font-size: 28px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.popup p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.popup button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--button-color, var(--white));
+    border: 3px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow var(--transition-speed);
+    margin-right: 15px;
+
+
+}
+
+.popup button:hover {
+    box-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--border-color);
+    padding: 5px;
+    line-height: 1;
+    
+}
+
+
+.App {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h1 {
+    font-size: 3rem; /* Adjust this value to change the text size */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Optional: centers the text */
+    margin: 20px 0; /* Optional: adds margin for spacing */
+}
+
+
+.blue { color: #4681f4; }
+.green { color: #28a745; }
+.red { color: #ED0800; }
+.orange { color: #FF5722; }
+.yellow { color: #FFEB3B; }
+.white { color: #FFFFFF; } /* for spaces, if needed */
+
+/* Optional: add a hover effect */
+h1 span:hover {
+  filter: brightness(85%);
+  transition: filter 0.3s ease;
+}
+
+/* Optional: add a text shadow for better visibility on light backgrounds */
+h1 span {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
